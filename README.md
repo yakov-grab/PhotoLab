@@ -1,7 +1,6 @@
 # PhotoLab v1.0
 
 Implementation of the PhotoLab v1.0 project
-The russian version of the task can be found in the repository.
 
 ## Part 1. Implementation of simple filters in PhotoLab v1.0
 
