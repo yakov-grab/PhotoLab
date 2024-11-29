@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="loadImg">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load Img</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveImg">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Img</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="grayscale">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grayscale</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="negative">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Negative</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toning">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>10</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Toning</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="emboss">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Emboss</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sharpen">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sharpen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boxBlur">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Box blur</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gaussianBlur">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gaussian blur</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="laplacian">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>40</y>
+      <width>101</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Laplacian</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearImg">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>140</y>
+      <width>541</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sobel">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sobel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="kernel">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kernel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brightness</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="brightness">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-255</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>80</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Contrast</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="contrast">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-255</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="pageStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="HSL">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>80</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HSL</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="HSV">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>80</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HSV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sobelLeft">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sobel left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sobelRight">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>40</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sobel right</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="saturation">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>80</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="value">
+     <number>128</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="colorInter">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>100</y>
+      <width>221</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>My Color Interface</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>541</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>120</y>
+      <width>20</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
